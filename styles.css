@@ -9,12 +9,21 @@ body {
   background-color: rgb(241, 241, 241);
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: rgb(49, 49, 49);
+}
+
 /* Header */
 
 .main-headline {
+  color: white;
   width: 100%;
   text-align: center;
-  background-color: rgb(102, 156, 237);
+  background-color: rgba(20, 80, 112, 1);
   padding: 30px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
@@ -25,6 +34,7 @@ main {
   width: 70%;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
 
   display: flex;
   justify-content: space-around;
@@ -77,24 +87,25 @@ main {
 /* Button */
 
 .show-answer {
+  color: white;
   padding: 20px;
   font-size: larger;
   margin-bottom: 25px;
   margin-top: 25px;
   border-radius: 10px;
-  border: 3px solid rgb(102, 156, 237);
-  background-color: rgb(102, 156, 237);
+  border: 3px solid rgba(20, 80, 112, 1);
+  background-color: rgba(20, 80, 112, 1);
 }
 
 .show-answer:hover,
 .answer-shown .show-answer {
   background-color: rgb(49, 49, 49);
-  color: white;
   cursor: pointer;
 }
 
 .answer-shown .show-answer:hover {
-  color: rgb(102, 156, 237);
+  /* color: rgba(20, 80, 112, 1); */
+  background-color: rgba(0, 102, 156, 1);
 }
 
 /* Card - Answer opened */
@@ -141,4 +152,48 @@ main {
 
   top: -20px;
   right: 20px;
+}
+
+/* Navigation */
+
+nav {
+  position: sticky;
+  bottom: 10px;
+
+  padding: 50px;
+  width: 70%;
+  margin: auto;
+  background: rgb(49, 49, 49);
+  background: linear-gradient(
+    41deg,
+    rgba(49, 49, 49, 1) 0%,
+    rgba(20, 80, 112, 1) 30%,
+    rgba(0, 102, 156, 1) 70%,
+    rgba(49, 49, 49, 1) 100%
+  );
+  border-radius: 50px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-items li i {
+  border: 1px solid transparent;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.nav-items li i:hover {
+  border: 1px solid white;
+  color: white;
+}
+
+.nav-items li .current-page {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  color: rgba(49, 49, 49, 1);
 }
