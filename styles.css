@@ -6,6 +6,7 @@
 
 body {
   font-family: sans-serif, "Arial Narrow", Arial, sans-serif, Courier, monospace;
+  background-color: rgb(241, 241, 241);
 }
 
 /* Header */
@@ -16,4 +17,128 @@ body {
   background-color: rgb(102, 156, 237);
   padding: 30px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Main */
+
+main {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-flow: row wrap;
+  gap: 50px;
+}
+
+/* Card*/
+
+.question-card {
+  width: 500px;
+  height: auto;
+  background-color: white;
+  border-radius: 25px;
+  border: 3px solid black;
+  box-shadow: 5px 5px 10px 5px rgba(68, 66, 145, 0.3);
+  padding: 20px;
+  padding-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  position: relative;
+}
+
+.question {
+  font-size: 150%;
+  text-align: center;
+}
+
+.answer {
+  line-height: 130%;
+  display: none;
+
+  position: absolute;
+  top: 90%;
+  z-index: 1;
+
+  width: 80%;
+  background-color: white;
+  padding: 30px;
+
+  box-shadow: 5px 5px 10px 5px rgba(68, 66, 145, 0.3);
+}
+
+/* Button */
+
+.show-answer {
+  padding: 20px;
+  font-size: larger;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  border-radius: 10px;
+  border: 3px solid rgb(102, 156, 237);
+  background-color: rgb(102, 156, 237);
+}
+
+.show-answer:hover,
+.answer-shown .show-answer {
+  background-color: rgb(49, 49, 49);
+  color: white;
+  cursor: pointer;
+}
+
+.answer-shown .show-answer:hover {
+  color: rgb(102, 156, 237);
+}
+
+/* Card - Answer opened */
+
+.answer-shown > .answer {
+  display: block;
+}
+
+/* Tag-list */
+
+.question-tag-list li::before {
+  content: "#";
+}
+
+.question-tag-list {
+  align-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  list-style: none;
+}
+
+.question-tag-list li {
+  padding: 10px;
+  background-color: rgb(49, 49, 49);
+  color: white;
+  font-weight: lighter;
+  border-radius: 5px;
+}
+
+/* Bookmark Icon */
+
+.bookmark-icon {
+  width: 0px;
+  height: 50px;
+  border: 25px solid rgb(255, 128, 0);
+  border-bottom: 12px solid white;
+  background-color: rgb(255, 128, 0);
+
+  border-radius: 5px 5px 1px 1px;
+
+  position: absolute;
+
+  top: -20px;
+  right: 20px;
 }
