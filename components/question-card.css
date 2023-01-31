@@ -1,0 +1,124 @@
+.question-card {
+  width: 500px;
+  height: auto;
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  border: 3px solid var(--border-background-color);
+  box-shadow: 5px 5px 25px 5px var(--tertiary-color);
+  padding: 20px;
+  padding-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  position: relative;
+}
+
+.question-card__question {
+  font-size: 150%;
+  text-align: center;
+}
+
+/* Answer */
+
+.question-card__answer {
+  line-height: 130%;
+  display: none;
+
+  position: absolute;
+  top: 80%;
+  z-index: 1;
+
+  width: 80%;
+  background-color: var(--secondary-color);
+  padding: 30px;
+
+  box-shadow: 0 0 5px 5px var(--correct-answer-box-shadow);
+}
+
+.question-card__answer-header {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.question-card__answer-header h4 {
+  text-decoration: underline;
+}
+
+.question-card__answer-header i {
+  font-size: 140%;
+}
+
+/* Button */
+
+.question-card__button {
+  color: var(--secondary-color);
+  padding: 20px;
+  font-size: larger;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  border-radius: 10px;
+  border: 3px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.question-card__button:hover,
+.question-card__answer--shown .question-card__button {
+  background-color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+.question-card__answer--shown .question-card__button:hover {
+  /* color: rgba(20, 80, 112, 1); */
+  background-color: var(--primary-color);
+}
+
+/* Card - Answer opened */
+
+.question-card__answer--shown > .question-card__answer {
+  display: block;
+}
+
+/* Tag-list */
+
+.question-card__tag-list {
+  align-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  list-style: none;
+}
+
+.question-card__tag-list li::before {
+  content: "#";
+}
+
+.question-card__tag-list li {
+  padding: 10px;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  font-weight: lighter;
+  border-radius: 5px;
+}
+
+/* Bookmark Icon */
+
+.question-card__bookmark {
+  width: 0px;
+  height: 50px;
+  border: 25px solid var(--bookmark-color);
+  border-bottom: 12px solid var(--secondary-color);
+  background-color: var(--bookmark-color);
+
+  border-radius: 5px 5px 1px 1px;
+
+  position: absolute;
+
+  top: -20px;
+  right: 20px;
+}
