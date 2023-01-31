@@ -157,6 +157,7 @@ main {
 /* Navigation */
 
 nav {
+  z-index: 2;
   position: sticky;
   bottom: 10px;
 
