@@ -1,0 +1,28 @@
+:root {
+  --primary-color: rgb(20, 80, 112);
+  --secondary-color: white;
+  --tertiary-color: rgb(49, 49, 49);
+  --border-shadow-color: rgb(0, 0, 0);
+  --body-background: rgb(241, 241, 241);
+  --correct-answer-box-shadow: rgb(0, 172, 77);
+  --bookmark-color: rgb(255, 128, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif, "Arial Narrow", Arial, sans-serif, Courier, monospace;
+  background-color: var(--body-background);
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+a:hover {
+  color: var(--tertiary-color);
+}

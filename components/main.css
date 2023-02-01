@@ -1,0 +1,12 @@
+main {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-flow: row wrap;
+  gap: 50px;
+}
