@@ -28,6 +28,8 @@ const navigationItems = document.querySelector('[data-js="navigation-items"]');
 // Button
 const themeButton = document.querySelector('[data-js="theme-button"]');
 
+// Event Listener
+
 themeButton.addEventListener("click", () => {
   bodyElement.classList.toggle("body--dark-mode");
   headerElement.classList.toggle("header--dark-mode");
