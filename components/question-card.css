@@ -129,7 +129,7 @@
 .question-card__bookmark--active:hover {
   color: var(--bookmark-color);
   text-shadow: 0px 0px 40px var(--tertiary-color);
-
+}
 
 /* Dark-Mode */
 
