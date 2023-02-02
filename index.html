@@ -14,8 +14,8 @@
 
     <title>Niko's Quiz-App</title>
   </head>
-  <body>
-    <header>
+  <body data-js="body">
+    <header data-js="header">
       <h1>Niko's Quiz-App</h1>
     </header>
 
@@ -27,16 +27,16 @@
         <button class="question-card__button" data-js="answer-button">
           Show Answer
         </button>
-        <div class="question-card__answer">
+        <div class="question-card__answer" data-js="question-answer">
           <div class="question-card__answer-header">
             <h4>Answer</h4>
             <i class="fa-regular fa-circle-xmark"></i>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            minima quisquam mollitia tempora. Provident velit iure dolorem
-            tempora a fugiat dicta quod minus et? Magni aliquid cum deleniti
-            aspernatur dicta?
+            Lorems ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae minima quisquam mollitia tempora. Provident velit iure
+            dolorem tempora a fugiat dicta quod minus et? Magni aliquid cum
+            deleniti aspernatur dicta?
           </p>
         </div>
         <ul class="question-card__tag-list">
@@ -44,12 +44,16 @@
           <li>flexbox</li>
           <li>css</li>
         </ul>
-        <i class="fa-solid fa-bookmark question-card__bookmark"></i>
+        <i
+          class="fa-solid fa-bookmark question-card__bookmark"
+          data-js="bookmark-icon"
+        >
+        </i>
       </section>
     </main>
 
-    <nav>
-      <ul class="nav-items">
+    <nav data-js="navigation">
+      <ul class="nav-items" data-js="navigation-items">
         <li>
           <a href="/index.html"
             ><i class="fa-solid fa-house current-page"></i
@@ -60,6 +64,11 @@
         </li>
         <li>
           <a href="/profile.html"><i class="fa-solid fa-circle-user"></i></a>
+        </li>
+        <li>
+          <button class="theme-button" data-js="theme-button">
+            Switch Mode
+          </button>
         </li>
       </ul>
     </nav>
