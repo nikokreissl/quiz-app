@@ -3,7 +3,6 @@
   height: auto;
   background-color: var(--secondary-color);
   border-radius: 25px;
-  border: 3px solid var(--border-background-color);
   box-shadow: 5px 5px 25px 5px var(--tertiary-color);
   padding: 20px;
   padding-top: 40px;
@@ -130,4 +129,20 @@
 .question-card__bookmark--active:hover {
   color: var(--bookmark-color);
   text-shadow: 0px 0px 40px var(--tertiary-color);
+
+
+/* Dark-Mode */
+
+.question-card--dark-mode {
+  color: var(--secondary-color);
+  background-color: var(--border-shadow-color);
+  border: 2px solid var(--body-background);
+}
+
+.question-card__bookmark--dark-mode {
+  color: var(--body-background);
+}
+
+.question-card__answer--dark-mode {
+  background-color: var(--tertiary-color);
 }

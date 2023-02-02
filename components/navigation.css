@@ -21,6 +21,7 @@ nav {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .nav-items i {
@@ -38,4 +39,35 @@ nav {
 .nav-items .current-page {
   box-shadow: 0 0 10px 5px var(--tertiary-color);
   color: var(--tertiary-color);
+}
+
+.theme-button::before {
+  content: "🌙 / ☀️";
+}
+
+.theme-button {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: larger;
+  border: 2px solid transparent;
+  color: var(--body-background);
+  background-color: transparent;
+}
+
+.theme-button:hover {
+  border-color: var(--body-background);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* Dark-Mode */
+
+.nav--dark-mode {
+  background: var(--tertiary-color);
+  box-shadow: 0 0 20px 1px var(--body-background);
+}
+
+.nav-items--dark-mode .current-page {
+  box-shadow: 0 0 10px 5px var(--body-background);
+  color: var(--body-background);
 }
