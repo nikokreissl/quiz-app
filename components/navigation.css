@@ -3,7 +3,7 @@ nav {
   bottom: 0px;
   width: 100%;
 
-  padding: 30px;
+  padding: 15px;
 
   margin: auto;
   background: linear-gradient(
@@ -26,7 +26,7 @@ nav {
 
 .nav-items i {
   border: 1px solid transparent;
-  font-size: 25px;
+  font-size: 1.6rem;
   padding: 10px 20px;
   border-radius: 50px;
 }
@@ -70,4 +70,28 @@ nav {
 .nav-items--dark-mode .current-page {
   box-shadow: 0 0 10px 5px var(--body-background);
   color: var(--body-background);
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .theme-button__text {
+    display: none;
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  .nav-items i {
+    border: 1px solid transparent;
+    font-size: 1.6rem;
+    padding: 5px 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    font-size: xx-small;
+  }
 }

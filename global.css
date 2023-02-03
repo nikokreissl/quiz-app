@@ -30,3 +30,15 @@ a {
 a:hover {
   color: var(--tertiary-color);
 }
+
+@media (max-width: 600px) {
+  :root {
+    font-size: small;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    font-size: xx-small;
+  }
+}
