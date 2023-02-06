@@ -20,28 +20,54 @@
     </header>
 
     <main>
-      <section class="profile-header">
-        <div class="profile-header__picture-name">
-          <img src="/img/profile-picture 2.JPG" alt="profile picture" />
-          <h2>User Name</h2>
-        </div>
-        <article class="profile-header__about">
-          <h3>About</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-            architecto iste autem sunt nostrum deserunt error necessitatibus
-            aperiam vero veritatis sint voluptas beatae earum aut, dolore alias
-            accusantium, perspiciatis a.
-          </p>
-        </article>
-      </section>
+      <div class="profile-container">
+        <section class="profile-header">
+          <div class="profile-header__container">
+            <img
+              class="profile-header__picture"
+              src="/img/profile-picture.png"
+              alt="profile picture"
+            />
+            <div class="profile-header__text-container">
+              <h2>User Name</h2>
+              <article class="profile-header__text-container__about desktop">
+                <h3>About</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Magni architecto iste autem sunt nostrum deserunt error
+                  necessitatibus aperiam vero veritatis sint voluptas beatae
+                  earum aut, dolore alias accusantium, perspiciatis a.
+                </p>
+              </article>
+            </div>
+          </div>
 
-      <section class="questions-bookmarks-count">
-        <div class="questions-created">Number of questions created</div>
-        <div class="questions-bookmarked">Number of bookmarks</div>
-      </section>
-
-      <section class="settings">Settings</section>
+          <article class="profile-header__text-container__about mobile">
+            <h3>About</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+              architecto iste autem sunt nostrum deserunt error necessitatibus
+              aperiam vero veritatis sint voluptas beatae earum aut, dolore
+              alias accusantium, perspiciatis a.
+            </p>
+          </article>
+        </section>
+        <section class="questions-bookmarks-count">
+          <ul>
+            <li class="questions-bookmarks-count__card questions-created">
+              <i class="fa-solid fa-bookmark"></i
+              ><span class="card--count">15</span>
+            </li>
+            <li class="questions-bookmarks-count__card questions-bookmarked">
+              <i class="fa-solid fa-circle-question"></i
+              ><span class="card--count">7</span>
+            </li>
+          </ul>
+        </section>
+        <section class="settings">
+          <h2>Settings</h2>
+        </section>
+      </div>
     </main>
 
     <nav>
