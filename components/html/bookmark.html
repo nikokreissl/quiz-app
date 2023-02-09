@@ -10,7 +10,7 @@
       src="https://kit.fontawesome.com/dde8d757b1.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/main.js" defer></script>
+    <script src="/components/main.js" defer></script>
 
     <title>Niko's Quiz-App</title>
   </head>
@@ -24,9 +24,7 @@
         <h3 class="question-card__question">
           What property flips the axes in flexbox?
         </h3>
-        <button class="question-card__button" data-js="answer-button">
-          Show Answer
-        </button>
+        <button data-js="answer-button">Show Answer</button>
         <div class="question-card__answer hidden" data-js="question-answer">
           <div class="question-card__answer-header">
             <h4>Answer</h4>
@@ -52,7 +50,7 @@
     </main>
 
     <nav>
-      <ul class="nav-items">
+      <ul class="nav__list">
         <li>
           <a href="/index.html"><i class="fa-solid fa-house"></i></a>
         </li>
@@ -60,7 +58,14 @@
           <a href="#"><i class="fa-solid fa-bookmark current-page"></i></a>
         </li>
         <li>
-          <a href="/profile.html"><i class="fa-solid fa-circle-user"></i></a>
+          <a href="/components/html/form.html">
+            <i class="fa-solid fa-circle-plus"></i>
+          </a>
+        </li>
+        <li>
+          <a href="/components/html/profile.html"
+            ><i class="fa-solid fa-circle-user"></i
+          ></a>
         </li>
       </ul>
     </nav>

@@ -17,26 +17,26 @@ nav {
   box-shadow: 0px 0px 10px 5px var(--border-shadow-color);
 }
 
-.nav-items {
+.nav__list {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.nav-items i {
+.nav__list i {
   border: 1px solid transparent;
   font-size: 1.6rem;
   padding: 10px 20px;
   border-radius: 50px;
 }
 
-.nav-items i:hover {
+.nav__list i:hover {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
 }
 
-.nav-items .current-page {
+.nav__list .current-page {
   box-shadow: 0 0 10px 5px var(--tertiary-color);
   color: var(--tertiary-color);
 }
@@ -48,7 +48,7 @@ nav {
     padding: 10px;
   }
 
-  .nav-items i {
+  .nav__list i {
     border: 1px solid transparent;
     font-size: 1.6rem;
     padding: 5px 15px;

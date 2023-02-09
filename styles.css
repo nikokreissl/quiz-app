@@ -1,6 +1,7 @@
-@import "/global.css";
-@import "/components/header.css";
-@import "/components/main.css";
-@import "/components/navigation.css";
-@import "/components/question-card.css";
-@import "/components/profile.css";
+@import "/components/css/global.css";
+@import "/components/css/header.css";
+@import "/components/css/main.css";
+@import "/components/css/navigation.css";
+@import "/components/css/question-card.css";
+@import "/components/css/profile.css";
+@import "/components/css/form.css";

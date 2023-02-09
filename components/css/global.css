@@ -27,9 +27,32 @@ a:hover {
   color: var(--tertiary-color);
 }
 
+button {
+  color: var(--secondary-color);
+  padding: 20px;
+  font-size: larger;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+button:hover {
+  background-color: var(--tertiary-color);
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   :root {
     font-size: small;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 1.1em;
+    margin: 5px 0px 5px 0px;
+    border-radius: 5px;
   }
 }
 

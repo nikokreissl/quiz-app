@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/dde8d757b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/components/main.js" defer></script>
+
+    <title>Niko's Quiz-App</title>
+  </head>
+  <body data-js="body">
+    <header data-js="header">
+      <h1>Niko's Quiz-App</h1>
+    </header>
+
+    <main>
+      <form>
+        <div class="form__input-container">
+          <label for="question">Your question:</label>
+          <textarea name="question" id="question" rows="5"></textarea>
+        </div>
+        <div class="form__input-container">
+          <label for="answer">Your answer:</label>
+          <textarea name="answer" id="answer" rows="5"></textarea>
+        </div>
+        <div class="form__input-container ">
+          <label for="tags">Tag:</label>
+          <input type="text" name="tags" id="tags" />
+        </div>
+          <button type="submit">Submit question</button>
+        </div>
+      </form>
+    </main>
+
+    <nav data-js="navigation">
+      <ul class="nav__list">
+        <li>
+          <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="/components/html/bookmark.html"
+            ><i class="fa-solid fa-bookmark"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-circle-plus current-page"></i>
+          </a>
+        </li>
+        <li>
+          <a href="/components/html/profile.html"
+            ><i class="fa-solid fa-circle-user"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
