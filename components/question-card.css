@@ -22,9 +22,12 @@
 
 /* Answer */
 
+.question-card__answer.hidden {
+  display: none;
+}
+
 .question-card__answer {
   line-height: 130%;
-  display: none;
 
   position: absolute;
   top: 75%;
@@ -64,21 +67,9 @@
   background-color: var(--primary-color);
 }
 
-.question-card__button:hover,
-.question-card__answer--shown .question-card__button {
+.question-card__button:hover {
   background-color: var(--tertiary-color);
   cursor: pointer;
-}
-
-.question-card__answer--shown .question-card__button:hover {
-  /* color: rgba(20, 80, 112, 1); */
-  background-color: var(--primary-color);
-}
-
-/* Card - Answer opened */
-
-.question-card__answer--shown > .question-card__answer {
-  display: block;
 }
 
 /* Tag-list */
