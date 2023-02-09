@@ -77,7 +77,7 @@
 
 /* Card - Answer opened */
 
-.question-card__answer--shown > .question-card__answer {
+.question-card__answer--shown {
   display: block;
 }
 
