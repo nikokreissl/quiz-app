@@ -4,8 +4,7 @@
   background-color: var(--secondary-color);
   border-radius: 15px;
   box-shadow: 5px 5px 25px 5px var(--tertiary-color);
-  padding: 20px;
-  padding-top: 40px;
+  padding: 40px 20px 20px 20px;
 
   display: flex;
   flex-direction: column;
@@ -171,8 +170,7 @@
   .question-card__button {
     padding: 10px;
     font-size: 1.1em;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin: 5px 0px 5px 0px;
     border-radius: 5px;
   }
 }

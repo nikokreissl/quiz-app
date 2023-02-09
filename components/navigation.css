@@ -41,25 +41,6 @@ nav {
   color: var(--tertiary-color);
 }
 
-.theme-button::before {
-  content: "🌙 / ☀️";
-}
-
-.theme-button {
-  padding: 10px;
-  border-radius: 5px;
-  font-size: larger;
-  border: 2px solid transparent;
-  color: var(--body-background);
-  background-color: transparent;
-}
-
-.theme-button:hover {
-  border-color: var(--body-background);
-  color: var(--secondary-color);
-  cursor: pointer;
-}
-
 /* Dark-Mode */
 
 .nav--dark-mode {
@@ -75,10 +56,6 @@ nav {
 /* Responsive */
 
 @media (max-width: 600px) {
-  .theme-button__text {
-    display: none;
-  }
-
   nav {
     padding: 10px;
   }
