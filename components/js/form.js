@@ -29,6 +29,7 @@ function createNewQuestion(questionData) {
   // Create new button & add to card
   const newQuestionButton = document.createElement("button");
   newQuestionButton.textContent = "Show Answer";
+  newQuestionButton.setAttribute("data-js", "answer-button");
   newQuestionCard.append(newQuestionButton);
 
   // Create new container for answer & add to card
@@ -37,6 +38,7 @@ function createNewQuestion(questionData) {
     "question-card__answer",
     "hidden"
   );
+  newQuestionCardAnswerContainer.setAttribute("data-js", "question-answer");
   newQuestionCard.append(newQuestionCardAnswerContainer);
 
   // Create new headline within answer container
@@ -81,5 +83,6 @@ function createNewQuestion(questionData) {
     "fa-bookmark",
     "question-card__bookmark"
   );
+  newQuestionBookmark.setAttribute("data-js", "bookmark-icon");
   newQuestionCard.append(newQuestionBookmark);
 }
