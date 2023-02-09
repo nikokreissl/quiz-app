@@ -8,7 +8,6 @@ const questionCardAnswer = document.querySelector(
 const questionCardBookmark = document.querySelector(
   '[data-js="bookmark-icon"]'
 );
-const questionForm = document.querySelector('[data-js="question-form"]');
 
 // Answer functionality - Show answer on first card only
 
@@ -25,11 +24,6 @@ questionCardButton.addEventListener("click", () => {
 
 questionCardBookmark.addEventListener("click", () => {
   classToggle(questionCardBookmark, "question-card__bookmark--active");
-});
-
-// Form Functionality
-questionForm.addEventListener("submit", (event) => {
-  event.preventDefault();
 });
 
 // Toggle Class Function
