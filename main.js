@@ -8,7 +8,12 @@ const questionCardAnswer = document.querySelector(
 );
 
 questionCardButton.addEventListener("click", () => {
-  classToggle(questionCardAnswer, "question-card__answer--shown");
+  classToggle(questionCardAnswer, "hidden");
+  if (questionCardAnswer.classList.value !== "question-card__answer hidden") {
+    questionCardButton.textContent = "Hide Answer";
+  } else {
+    questionCardButton.textContent = "Show Answer";
+  }
 });
 
 // Bookmark functionality - Change color on first card only
