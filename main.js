@@ -1,3 +1,0 @@
-// Query
-
-// Open answer script
