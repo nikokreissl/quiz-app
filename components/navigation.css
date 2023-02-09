@@ -41,18 +41,6 @@ nav {
   color: var(--tertiary-color);
 }
 
-/* Dark-Mode */
-
-.nav--dark-mode {
-  background: var(--tertiary-color);
-  box-shadow: 0 0 20px 1px var(--body-background);
-}
-
-.nav-items--dark-mode .current-page {
-  box-shadow: 0 0 10px 5px var(--body-background);
-  color: var(--body-background);
-}
-
 /* Responsive */
 
 @media (max-width: 600px) {

@@ -6,9 +6,3 @@ header {
   padding: 30px;
   box-shadow: 0 0 20px 1px var(--border-shadow-color);
 }
-
-.header--dark-mode {
-  color: var(--secondary-color);
-  background-color: var(--border-shadow-color);
-  box-shadow: 0 0 20px 1px var(--body-background);
-}

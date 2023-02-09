@@ -130,22 +130,6 @@
   text-shadow: 0px 0px 40px var(--tertiary-color);
 }
 
-/* Dark-Mode */
-
-.question-card--dark-mode {
-  color: var(--secondary-color);
-  background-color: var(--border-shadow-color);
-  border: 2px solid var(--body-background);
-}
-
-.question-card__bookmark--dark-mode {
-  color: var(--body-background);
-}
-
-.question-card__answer--dark-mode {
-  background-color: var(--tertiary-color);
-}
-
 /* Responsive */
 
 @media (max-width: 600px) {

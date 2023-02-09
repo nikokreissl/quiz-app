@@ -1,0 +1,41 @@
+/* Body */
+
+.body--dark-mode {
+  background-color: var(--border-shadow-color);
+}
+
+/* Header */
+
+.header--dark-mode {
+  color: var(--secondary-color);
+  background-color: var(--border-shadow-color);
+  box-shadow: 0 0 20px 1px var(--body-background);
+}
+
+/* Navigation */
+
+.nav--dark-mode {
+  background: var(--tertiary-color);
+  box-shadow: 0 0 20px 1px var(--body-background);
+}
+
+.nav-items--dark-mode .current-page {
+  box-shadow: 0 0 10px 5px var(--body-background);
+  color: var(--body-background);
+}
+
+/* Question Card */
+
+.question-card--dark-mode {
+  color: var(--secondary-color);
+  background-color: var(--border-shadow-color);
+  border: 2px solid var(--body-background);
+}
+
+.question-card__bookmark--dark-mode {
+  color: var(--body-background);
+}
+
+.question-card__answer--dark-mode {
+  background-color: var(--tertiary-color);
+}

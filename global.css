@@ -19,10 +19,6 @@ body {
   background-color: var(--body-background);
 }
 
-.body--dark-mode {
-  background-color: var(--border-shadow-color);
-}
-
 a {
   color: var(--secondary-color);
 }
