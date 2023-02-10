@@ -21,7 +21,7 @@ function createNewQuestion(questionData) {
   questionCardContainer.append(newQuestionCard);
 
   // Create new headline with question & add to card
-  const newQuestionHeadline = document.createElement("h3");
+  const newQuestionHeadline = document.createElement("h2");
   newQuestionHeadline.classList.add("question-card__question");
   newQuestionHeadline.textContent = questionData.question;
   newQuestionCard.append(newQuestionHeadline);
@@ -29,7 +29,6 @@ function createNewQuestion(questionData) {
   // Create new button & add to card
   const newQuestionButton = document.createElement("button");
   newQuestionButton.textContent = "Show Answer";
-  newQuestionButton.setAttribute("data-js", "answer-button");
   newQuestionCard.append(newQuestionButton);
 
   // Create new container for answer & add to card
@@ -38,7 +37,6 @@ function createNewQuestion(questionData) {
     "question-card__answer",
     "hidden"
   );
-  newQuestionCardAnswerContainer.setAttribute("data-js", "question-answer");
   newQuestionCard.append(newQuestionCardAnswerContainer);
 
   // Create new headline within answer container
@@ -49,7 +47,7 @@ function createNewQuestion(questionData) {
   newQuestionCardAnswerContainer.append(newQuestionCardAnswerHeaderContainer);
 
   // Add headline "Answer" in answer container
-  const newQuestionCardAnswerHeadline = document.createElement("h4");
+  const newQuestionCardAnswerHeadline = document.createElement("h3");
   newQuestionCardAnswerHeadline.textContent = "Answer";
   newQuestionCardAnswerHeaderContainer.append(newQuestionCardAnswerHeadline);
 
@@ -83,6 +81,5 @@ function createNewQuestion(questionData) {
     "fa-bookmark",
     "question-card__bookmark"
   );
-  newQuestionBookmark.setAttribute("data-js", "bookmark-icon");
   newQuestionCard.append(newQuestionBookmark);
 }
