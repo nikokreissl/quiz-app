@@ -46,7 +46,7 @@
   height: 25px;
 }
 
-.question-card__answer-header h4 {
+.question-card__answer-header h3 {
   text-decoration: underline;
 }
 

@@ -1,11 +1,15 @@
 // Query
 
-// Answer functionality - Show answer on first card only
-
+// Variables
 const questionCardButton = document.querySelector('[data-js="answer-button"]');
 const questionCardAnswer = document.querySelector(
   '[data-js="question-answer"]'
 );
+const questionCardBookmark = document.querySelector(
+  '[data-js="bookmark-icon"]'
+);
+
+// Answer functionality - Show answer on first card only
 
 questionCardButton.addEventListener("click", () => {
   classToggle(questionCardAnswer, "hidden");
@@ -17,10 +21,6 @@ questionCardButton.addEventListener("click", () => {
 });
 
 // Bookmark functionality - Change color on first card only
-
-const questionCardBookmark = document.querySelector(
-  '[data-js="bookmark-icon"]'
-);
 
 questionCardBookmark.addEventListener("click", () => {
   classToggle(questionCardBookmark, "question-card__bookmark--active");
