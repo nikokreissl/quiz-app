@@ -14,6 +14,7 @@ questionForm.addEventListener("submit", (event) => {
   createNewQuestion(data);
 });
 
+// Create new question function
 function createNewQuestion(questionData) {
   // Create new card & add to main
   const newQuestionCard = document.createElement("section");

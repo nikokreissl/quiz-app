@@ -19,6 +19,18 @@ label:hover {
   cursor: pointer;
 }
 
+input[type="text"],
+textarea {
+  padding: 10px;
+  font-family: sans-serif, "Arial Narrow", Arial, sans-serif, Courier, monospace;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  background-color: var(--body-background);
+}
+
 button[type="submit"] {
   width: 200px;
   align-self: center;
