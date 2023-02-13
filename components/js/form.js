@@ -1,11 +1,24 @@
 // Query
 
 // Variables
+// Form & new cards container
 const questionCardContainer = document.querySelector('[data-js="main"]');
 const questionForm = document.querySelector('[data-js="question-form"]');
 
+// Input count question
 const inputCountQuestion = document.querySelector(
   '[data-js="input-count-question"]'
+);
+const charactersLeftCountQuestion = document.querySelector(
+  '[data-js="input-count-question-number"]'
+);
+
+// Input count answer
+const inputCountAnswer = document.querySelector(
+  '[data-js="input-count-answer"]'
+);
+const charactersLeftCountAnswer = document.querySelector(
+  '[data-js="input-count-answer-number"]'
 );
 
 // Form Functionality
@@ -17,19 +30,21 @@ questionForm.addEventListener("submit", (event) => {
 
   createNewQuestion(data);
 
-  event.target.reset();
+  questionForm.reset();
   questionForm.elements.question.focus();
 });
 
-// Input Count Functionality
+// Count Question
+inputCount(inputCountQuestion, charactersLeftCountQuestion);
+// Count Answer
+inputCount(inputCountAnswer, charactersLeftCountAnswer);
 
-inputCountQuestion.addEventListener("input", () => {
-  const charactersLeftCountQuestion = document.querySelector(
-    '[data-js="input-count-question-number"]'
-  );
-  charactersLeftCountQuestion.textContent =
-    inputCountQuestion.maxLength - inputCountQuestion.value.length;
-});
+// Input count function
+function inputCount(counter, output) {
+  counter.addEventListener("input", () => {
+    output.textContent = counter.maxLength - counter.value.length;
+  });
+}
 
 // Create new question function
 function createNewQuestion(questionData) {

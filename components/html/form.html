@@ -38,11 +38,15 @@
         <div class="form__input-container">
           <label for="answer">Your answer:</label>
           <textarea
+            data-js="input-count-answer"
             name="answer"
             id="answer"
             rows="5"
             maxlength="150"
           ></textarea>
+          <p>
+            <span data-js="input-count-answer-number">150</span> characters left
+          </p>
         </div>
         <div class="form__input-container">
           <label for="tags">Tag:</label>
