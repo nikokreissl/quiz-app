@@ -15,6 +15,12 @@ form {
   font-size: 1.3rem;
 }
 
+.form__input-container p {
+  margin-top: 5px;
+  align-self: flex-end;
+  color: var(--tertiary-color);
+}
+
 label:hover {
   cursor: pointer;
 }
