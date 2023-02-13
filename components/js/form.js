@@ -12,6 +12,9 @@ questionForm.addEventListener("submit", (event) => {
   const data = Object.fromEntries(formData);
 
   createNewQuestion(data);
+
+  event.target.reset();
+  questionForm.elements.question.focus();
 });
 
 // Create new question function
