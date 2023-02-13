@@ -4,6 +4,10 @@
 const questionCardContainer = document.querySelector('[data-js="main"]');
 const questionForm = document.querySelector('[data-js="question-form"]');
 
+const inputCountQuestion = document.querySelector(
+  '[data-js="input-count-question"]'
+);
+
 // Form Functionality
 questionForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -15,6 +19,16 @@ questionForm.addEventListener("submit", (event) => {
 
   event.target.reset();
   questionForm.elements.question.focus();
+});
+
+// Input Count Functionality
+
+inputCountQuestion.addEventListener("input", () => {
+  const charactersLeftCountQuestion = document.querySelector(
+    '[data-js="input-count-question-number"]'
+  );
+  charactersLeftCountQuestion.textContent =
+    inputCountQuestion.maxLength - inputCountQuestion.value.length;
 });
 
 // Create new question function

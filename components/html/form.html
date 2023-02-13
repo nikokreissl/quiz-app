@@ -23,12 +23,26 @@
       <form data-js="question-form">
         <div class="form__input-container">
           <label for="question">Your question:</label>
-          <textarea name="question" id="question" rows="5"></textarea>
-          <p><span data-js="input-count">150</span> characters left</p>
+          <textarea
+            data-js="input-count-question"
+            name="question"
+            id="question"
+            rows="5"
+            maxlength="150"
+          ></textarea>
+          <p>
+            <span data-js="input-count-question-number">150</span> characters
+            left
+          </p>
         </div>
         <div class="form__input-container">
           <label for="answer">Your answer:</label>
-          <textarea name="answer" id="answer" rows="5"></textarea>
+          <textarea
+            name="answer"
+            id="answer"
+            rows="5"
+            maxlength="150"
+          ></textarea>
         </div>
         <div class="form__input-container">
           <label for="tags">Tag:</label>
