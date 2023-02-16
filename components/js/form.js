@@ -12,6 +12,9 @@ const inputCountQuestion = document.querySelector(
 const charactersLeftCountQuestion = document.querySelector(
   '[data-js="input-count-question-number"]'
 );
+const charactersLeftTextQuestion = document.querySelector(
+  '[data-js="input-count-question-text"]'
+);
 
 // Input count answer
 const inputCountAnswer = document.querySelector(
@@ -19,6 +22,9 @@ const inputCountAnswer = document.querySelector(
 );
 const charactersLeftCountAnswer = document.querySelector(
   '[data-js="input-count-answer-number"]'
+);
+const charactersLeftTextAnswer = document.querySelector(
+  '[data-js="input-count-answer-text"]'
 );
 
 // Form Functionality
@@ -35,14 +41,32 @@ questionForm.addEventListener("submit", (event) => {
 });
 
 // Count Question
-inputCount(inputCountQuestion, charactersLeftCountQuestion);
+inputCount(
+  inputCountQuestion,
+  charactersLeftCountQuestion,
+  charactersLeftTextQuestion
+);
 // Count Answer
-inputCount(inputCountAnswer, charactersLeftCountAnswer);
+inputCount(
+  inputCountAnswer,
+  charactersLeftCountAnswer,
+  charactersLeftTextAnswer
+);
 
 // Input count function
-function inputCount(counter, output) {
+function inputCount(counter, outputNumber, outputText) {
   counter.addEventListener("input", () => {
-    output.textContent = counter.maxLength - counter.value.length;
+    const remainingCharacters = counter.maxLength - counter.value.length;
+    outputNumber.textContent = remainingCharacters;
+    if (remainingCharacters === 150) {
+      outputText.style.color = "black";
+    } else if (remainingCharacters < 150 && remainingCharacters > 50) {
+      outputText.style.color = "green";
+    } else if (remainingCharacters < 51 && remainingCharacters > 25) {
+      outputText.style.color = "orange";
+    } else if (remainingCharacters < 26) {
+      outputText.style.color = "red";
+    }
   });
 }
 
