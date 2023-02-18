@@ -15,8 +15,26 @@ form {
   font-size: 1.3rem;
 }
 
+.form__input-container p {
+  margin-top: 5px;
+  align-self: flex-end;
+  color: var(--tertiary-color);
+}
+
 label:hover {
   cursor: pointer;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  font-family: sans-serif, "Arial Narrow", Arial, sans-serif, Courier, monospace;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  background-color: var(--body-background);
 }
 
 button[type="submit"] {

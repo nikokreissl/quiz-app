@@ -23,18 +23,36 @@
       <form data-js="question-form">
         <div class="form__input-container">
           <label for="question">Your question:</label>
-          <textarea name="question" id="question" rows="5"></textarea>
+          <textarea
+            data-js="input-count-question"
+            name="question"
+            id="question"
+            rows="5"
+            maxlength="150"
+          ></textarea>
+          <p data-js="input-count-question-text">
+            <span data-js="input-count-question-number">150</span> characters
+            left
+          </p>
         </div>
         <div class="form__input-container">
           <label for="answer">Your answer:</label>
-          <textarea name="answer" id="answer" rows="5"></textarea>
+          <textarea
+            data-js="input-count-answer"
+            name="answer"
+            id="answer"
+            rows="5"
+            maxlength="150"
+          ></textarea>
+          <p data-js="input-count-answer-text">
+            <span data-js="input-count-answer-number">150</span> characters left
+          </p>
         </div>
-        <div class="form__input-container ">
+        <div class="form__input-container">
           <label for="tags">Tag:</label>
           <input type="text" name="tags" id="tags" />
         </div>
-          <button type="submit">Submit question</button>
-        </div>
+        <button type="submit">Submit question</button>
       </form>
     </main>
 
